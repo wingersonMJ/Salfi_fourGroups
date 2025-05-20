@@ -16,13 +16,22 @@ Transparency of source code and results for a manuscript submitted to [journal t
 
 ## Knowledge gaps:
 
+
 ## Objectives: 
 
+---
 
+# Methods
 
+## Retrospective chart review
 
+## Grouping variable
 
+## Statistical methods
 
+---
+
+# Results
 
 **Table 1:** Demographics and injury characteristics for patients enrolled in the study. 
 |                               |           | Missing   | Overall       | +Ex/+Sleep    | +Ex/-Sleep    | -Ex/+Sleep    | -Ex/-Sleep    | P-Value   |
@@ -54,6 +63,11 @@ Transparency of source code and results for a manuscript submitted to [journal t
 | HBI_total_parent, mean (SD)   |           | 37        | 15.19 (11.60) | 7.29 (7.24)   | 28.43 (12.86) | 13.99 (10.84) | 20.26 (11.64) | <0.001    |
 | hbi_somatic, mean (SD)        |           | 4         | 8.91 (5.89)   | 5.11 (4.91)   | 12.89 (5.13)  | 7.99 (5.31)   | 12.02 (5.85)  | <0.001    |
 | hbi_cognitive, mean (SD)      |           | 4         | 10.67 (8.14)  | 5.84 (6.63)   | 13.22 (7.48)  | 9.85 (7.78)   | 14.21 (8.07)  | <0.001    |
+
+
+
+
+
 
 
 
