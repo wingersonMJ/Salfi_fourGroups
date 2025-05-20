@@ -12,12 +12,15 @@ Transparency of source code and results for a manuscript submitted to [journal t
 # Overview
 
 ## Background:
-
-Exercise is good, concussion is bad
-
-
-## Knowledge gaps:
-
+1. Define concussion, prevalence, how long is recovery?
+2. Sleep and exercise post-concussion:
+- Role of exercise in recovery
+- Sleep and resolution of post-concussion symptoms
+3. Sleep and exercise in healthy kids:
+- Sleep and associations with cognitive symptoms?
+- Exercise and cognition?
+4. Combined effects?
+5. "Exercise and sleep are often examined independently. Thus, we investigated: (1) relationships between concurrent sleep and exercise early in concussion recovery and symptom resolution time, and (2) factors predicting engagement in concurrent early sleep and exercise after concussion."
 
 ## Objectives: 
 
