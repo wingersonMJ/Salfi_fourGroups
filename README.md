@@ -4,6 +4,7 @@
 
 
 
+**Table 1:** Demographics and injury characteristics for patients enrolled in the study. 
 |                               |           | Missing   | Overall       | +Ex/+Sleep    | +Ex/-Sleep    | -Ex/+Sleep    | -Ex/-Sleep    | P-Value   |
 |-------------------------------|-----------|-----------|---------------|---------------|---------------|---------------|---------------|-----------|
 | n                             |           |           | 335           | 46            | 9             | 184           | 96            |           |
