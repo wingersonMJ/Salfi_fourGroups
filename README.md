@@ -1,4 +1,24 @@
-# Exploring sleep & exercise after concussion
+# The combined effect of sleep and exercise on adolescent patients recovering from concussion
+Wingerson, MJ  
+mat.wingerson@gmail.com
+
+# Description 
+Transparency of source code and results for a manuscript submitted to [journal tbd]. 
+
+[Add citation when accepted]
+
+---
+
+# Overview
+
+## Background:
+
+
+## Knowledge gaps:
+
+## Objectives: 
+
+
 
 
 
