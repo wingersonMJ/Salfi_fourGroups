@@ -12,15 +12,10 @@ Transparency of source code and results for a manuscript submitted to [journal t
 # Overview
 
 ## Background:
-1. Define concussion, prevalence, how long is recovery?
-2. Sleep and exercise post-concussion:
-- Role of exercise in recovery
-- Sleep and resolution of post-concussion symptoms
-3. Sleep and exercise in healthy kids:
-- Sleep and associations with cognitive symptoms?
-- Exercise and cognition?
-4. Combined effects?
-5. "Exercise and sleep are often examined independently. Thus, we investigated: (1) relationships between concurrent sleep and exercise early in concussion recovery and symptom resolution time, and (2) factors predicting engagement in concurrent early sleep and exercise after concussion."
+
+The primary focus of concussion rehabilitation and clinical management is to facilitate a timely resolution of symptoms, particularly among adolescent patients.[ref](https://bjsm.bmj.com/content/57/11/695) Evidence-based rehabilitation protocols designed to aid in symptom resolution have been previously established,[ref](https://bjsm.bmj.com/content/57/12/771) with the most common approach being engagement in early post-injury aerobic exercise as symptoms allow.[ref](https://bjsm.bmj.com/content/57/12/762). However, emerging evidence suggests other lifestyle factors may similarly affect post-concussion symptoms. For example, sleep disturbances are common among adolescents after concussion, and those who sleep better post-injury recover faster.[ref](https://pubmed.ncbi.nlm.nih.gov/34145161/).
+
+Although past work has established the role of exercise and sleep in recovery, independent of each other, no research has explored the potential combined effect of sleep and exercise on post-concussion symptom resolution. 
 
 ## Objectives: 
 
@@ -43,7 +38,7 @@ Transparency of source code and results for a manuscript submitted to [journal t
 |-------------------------------|-----------|-----------|---------------|---------------|---------------|---------------|---------------|
 | n                             |           |           | 335           | 46            | 9             | 184           | 96            |           
 | Days since injury, mean (SD)  |           | 0         | 8.64 (5.27)   | 10.59 (5.21)  | 12.78 (5.43)  | 7.97 (4.98)   | 8.61 (5.51)   |
-| Sex  , n (%)                  | female    |           | 208 (62.09)   | 25 (54.35)    | 4 (44.44)     | 124 (67.39)   | 55 (57.29)    | 
+| Sex, n (%)                    | female    |           | 208 (62.09)   | 25 (54.35)    | 4 (44.44)     | 124 (67.39)   | 55 (57.29)    | 
 |                               | male      |           | 127 (37.91)   | 21 (45.65)    | 5 (55.56)     | 60 (32.61)    | 41 (42.71)    |           
 | age, mean (SD)                |           | 1         | 14.48 (2.26)  | 14.32 (2.28)  | 14.27 (2.92)  | 14.56 (2.30)  | 14.41 (2.14)  | 
 | concussion history, n (%)     | No        |           | 190 (56.72)   | 24 (52.17)    | 7 (77.78)     | 101 (54.89)   | 58 (60.42)    | 
