@@ -29,7 +29,9 @@ Our secondary objective was to identify demographic, medical history, and injury
 
 We grouped patients based on their self-reported sleep and exercise behaviors at the patient's initial post-injury clinical visit (within 21 days of concussion). Patients indicated whether they had engaged in aerobic exercise since their injury (yes or no), and also reported whether they experienced sleep problems during the same timeframe (yes = sleeping poorly; no = sleeping well). Based on these responses, we grouped participants as exercising and sleeping well (+Ex/+Sleep), not exercising and sleeping well (-Ex/+Sleep), exercising and sleeping poorly (+Ex/-Sleep), and not exercising and sleeping poorly (-Ex/-Sleep). 
 
-We first compared the demographic, clinical, and injury characteristics of these four groups univariately using Analysis of Variance (ANOVA) and Chi-Squared tests. We then used Cox Proportional Hazards (Cox PH) models to compare symptom resolution time between the four groups in a time-to-event analysis. The first Cox PH model was unadjusted and included only the four groups as predictors of time to symptom resolution. The second model was adjusted and included covariates that univariably differed between groups. To avoid multicollinearity between predictors in the adjusted model, only one variable representing acute symptom severity was included (i.e., the adjusted model would not include headache severity and HBI score, given the strong correlation between these variables and risk of variance inflation if both are included as predictors). 
+We first compared the demographic, clinical, and injury characteristics of these four groups univariately using Analysis of Variance (ANOVA) and Chi-Squared tests. Post-hoc tests were used to evaluate differences between individual groups, with p-values adjusted for multiple comparisons using Tukey's HSD. We then used Cox Proportional Hazards (Cox PH) models to compare symptom resolution time between the four groups in a time-to-event analysis. The first Cox PH model was unadjusted and included only the four groups as predictors of time to symptom resolution. The second model was adjusted and included covariates that univariably differed between groups. To avoid multicollinearity between predictors in the adjusted model, only one variable representing acute symptom severity was included (i.e., the adjusted model would not include headache severity and HBI score, given the strong correlation between these variables and risk of variance inflation if both are included as predictors). 
+
+All statistical tests were two-sided and evaluated at an alpha level of 0.05. Analysis was conducted in Python.
 
 ---
 
@@ -42,37 +44,33 @@ We first compared the demographic, clinical, and injury characteristics of these
 | Days since injury, mean (SD)  |           | 0         | 8.64 (5.27)   | 10.59 (5.21)  | 12.78 (5.43)  | 7.97 (4.98)   | 8.61 (5.51)   | 0.0018  |
 | Sex, n (%)                    | female    |           | 208 (62.09)   | 25 (54.35)    | 4 (44.44)     | 124 (67.39)   | 55 (57.29)    | 0.1388  |
 |                               | male      |           | 127 (37.91)   | 21 (45.65)    | 5 (55.56)     | 60 (32.61)    | 41 (42.71)    |         | 
-| age, mean (SD)                |           | 1         | 14.48 (2.26)  | 14.32 (2.28)  | 14.27 (2.92)  | 14.56 (2.30)  | 14.41 (2.14)  | 0.8800  |
-| concussion history, n (%)     | No        |           | 190 (56.72)   | 24 (52.17)    | 7 (77.78)     | 101 (54.89)   | 58 (60.42)    | 0.4238  |
+| Age, mean (SD)                |           | 1         | 14.48 (2.26)  | 14.32 (2.28)  | 14.27 (2.92)  | 14.56 (2.30)  | 14.41 (2.14)  | 0.8800  |
+| Concussion history, n (%)     | No        |           | 190 (56.72)   | 24 (52.17)    | 7 (77.78)     | 101 (54.89)   | 58 (60.42)    | 0.4238  |
 |                               | Yes       |           | 145 (43.28)   | 22 (47.83)    | 2 (22.22)     | 83 (45.11)    | 38 (39.58)    |         | 
 | Time to symptom resolution, mean (SD)|    | 0         | 21.46 (23.47) | 12.85 (10.51) | 58.33 (89.40) | 21.02 (20.49) | 22.96 (15.34) | <0.0001 |   
-| Presisting Sytmptoms, n (%)   | No        |           | 268 (80.00)   | 44 (95.65)    | 4 (44.44)     | 148 (80.43)   | 72 (75.00)    | 0.0013  |   
+| Presisting Symptoms, n (%)   | No        |           | 268 (80.00)   | 44 (95.65)    | 4 (44.44)     | 148 (80.43)   | 72 (75.00)    | 0.0013  |   
 |                               | Yes       |           | 67 (20.00)    | 2 (4.35)      | 5 (55.56)     | 36 (19.57)    | 24 (25.00)    |         |  
 | Time to RTP, mean (SD)        |           | 39        | 31.04 (26.41) | 22.87 (12.31) | 71.44 (89.90) | 30.16 (20.13) | 32.19 (24.88) | <0.0001 |   
-| anxiety hx, n (%)             | No        |           | 309 (92.24)   | 45 (97.83)    | 9 (100.00)    | 174 (94.57)   | 81 (84.38)    | 0.0060  | 
+| Anxiety history, n (%)        | No        |           | 309 (92.24)   | 45 (97.83)    | 9 (100.00)    | 174 (94.57)   | 81 (84.38)    | 0.0060  | 
 |                               | Yes       |           | 26 (7.76)     | 1 (2.17)      | 0 (0.00)      | 10 (5.43)     | 15 (15.62)    |         | 
-| depression hx, n (%)          | No        |           | 321 (95.82)   | 44 (95.65)    | 9 (100.00)    | 178 (96.74)   | 90 (93.75)    | 0.6125  |
+| Depression history, n (%)     | No        |           | 321 (95.82)   | 44 (95.65)    | 9 (100.00)    | 178 (96.74)   | 90 (93.75)    | 0.6125  |
 |                               | Yes       |           | 14 (4.18)     | 2 (4.35)      | 0 (0.00)      | 6 (3.26)      | 6 (6.25)      |         | 
-| headaches, n (%)              | No        |           | 70 (20.90)    | 27 (58.70)    | 1 (11.11)     | 36 (19.57)    | 6 (6.25)      | <0.0001 |   
+| Proportion with headache, n (%)| No       |           | 70 (20.90)    | 27 (58.70)    | 1 (11.11)     | 36 (19.57)    | 6 (6.25)      | <0.0001 |   
 |                               | Yes       |           | 265 (79.10)   | 19 (41.30)    | 8 (88.89)     | 148 (80.43)   | 90 (93.75)    |         |  
-| headache_severity (0 to 10), mean (SD)|   | 0         | 2.95 (2.61)   | 1.22 (1.97)   | 3.89 (3.22)   | 2.73 (2.52)   | 4.10 (2.46)   | <0.0001 |   
-| history of sleep problems, n (%) | No     |           | 306 (91.34)   | 44 (95.65)    | 6 (66.67)     | 179 (97.28)   | 77 (80.21)    | <0.0001 |
+| Headache severity (0 to 10 scale), mean (SD)|| 0      | 2.95 (2.61)   | 1.22 (1.97)   | 3.89 (3.22)   | 2.73 (2.52)   | 4.10 (2.46)   | <0.0001 |   
+| History of sleep problems, n (%) | No     |           | 306 (91.34)   | 44 (95.65)    | 6 (66.67)     | 179 (97.28)   | 77 (80.21)    | <0.0001 |
 |                               | Yes       |           | 28 (8.36)     | 2 (4.35)      | 2 (22.22)     | 5 (2.72)      | 19 (19.79)    |         |  
 |                               | Missing   |           | 1 (0.30)      | 0 (0.00)      | 1 (11.11)     | 0 (0.00)      | 0 (0.00)      |         | 
-| HBI_total, mean (SD)          |           | 4         | 19.58 (12.94) | 10.95 (10.79) | 26.11 (11.37) | 17.84 (11.94) | 26.23 (12.55) | <0.0001 | 
-| hbi_somatic, mean (SD)        |           | 4         | 8.91 (5.89)   | 5.11 (4.91)   | 12.89 (5.13)  | 7.99 (5.31)   | 12.02 (5.85)  |         |
-| hbi_cognitive, mean (SD)      |           | 4         | 10.67 (8.14)  | 5.84 (6.63)   | 13.22 (7.48)  | 9.85 (7.78)   | 14.21 (8.07)  |         |
+| HBI total, mean (SD)          |           | 4         | 19.58 (12.94) | 10.95 (10.79) | 26.11 (11.37) | 17.84 (11.94) | 26.23 (12.55) | <0.0001 | 
 
 
-    0: '-Ex/+Sleep',
-    1: '+Ex/+Sleep',
-    2: '-Ex/-Sleep',
-    3: '+Ex/-Sleep'
+**Group codes**
+0: '-Ex/+Sleep',
+1: '+Ex/+Sleep',
+2: '-Ex/-Sleep',
+3: '+Ex/-Sleep'
 
-
-    
-
-PPCS:
+Presisting Symptoms:
   Group 0 vs 1: p = 0.0236
   Group 0 vs 3: p = 0.0308
   Group 0 vs 2: p = 0.3689
@@ -80,8 +78,7 @@ PPCS:
   Group 1 vs 2: p = 0.0060
   Group 3 vs 2: p = 0.1163
 
-
-anxiety:
+Anxiety history:
   Group 0 vs 1: p = 0.5887
   Group 0 vs 3: p = 1.0000
   Group 0 vs 2: p = 0.0089
@@ -89,8 +86,7 @@ anxiety:
   Group 1 vs 2: p = 0.0367
   Group 3 vs 2: p = 0.4338
 
-
-headaches:
+Proportion with headache:
   Group 0 vs 1: p = 0.0000
   Group 0 vs 3: p = 0.8450
   Group 0 vs 2: p = 0.0053
@@ -99,16 +95,13 @@ headaches:
   Group 3 vs 2: p = 1.0000
 
 
-history_sleep_problems:
+History of sleep problems:
   Group 0 vs 1: p = 0.9236
   Group 0 vs 3: p = 0.0000
   Group 0 vs 2: p = 0.0000
   Group 1 vs 3: p = 0.0105
   Group 1 vs 2: p = 0.0297
   Group 3 vs 2: p = 0.0043
-
-
-
 
 time_since_injury: ANOVA F = 5.12, p = 0.0018
 Multiple Comparison of Means - Tukey HSD, FWER=0.05
@@ -164,45 +157,7 @@ group1 group2 meandiff p-adj   lower   upper  reject
      2      3  -0.2153 0.9944 -2.4255   1.995  False
 ----------------------------------------------------
 
-bess_hard1: ANOVA F = 1.83, p = 0.1424
-bess_hard2: ANOVA F = 4.62, p = 0.0035
-Multiple Comparison of Means - Tukey HSD, FWER=0.05
-===================================================
-group1 group2 meandiff p-adj   lower  upper  reject
----------------------------------------------------
-     0      1  -1.1634 0.1071 -2.4865 0.1597  False
-     0      2   0.7921  0.179 -0.2154 1.7997  False
-     0      3   1.2366 0.6407 -1.4727 3.9458  False
-     1      2   1.9556 0.0028  0.5206 3.3906   True
-     1      3      2.4 0.1426 -0.4955 5.2955  False
-     2      3   0.4444 0.9759 -2.3212 3.2101  False
----------------------------------------------------
 
-bess_hard3: ANOVA F = 5.97, p = 0.0006
-Multiple Comparison of Means - Tukey HSD, FWER=0.05
-===================================================
-group1 group2 meandiff p-adj   lower  upper  reject
----------------------------------------------------
-     0      1     -1.1 0.0568 -2.2215 0.0215  False
-     0      2   0.8617 0.0485   0.004 1.7194   True
-     0      3   0.0556 0.9999 -2.2389 2.3501  False
-     1      2   1.9617 0.0002  0.7446 3.1788   True
-     1      3   1.1556 0.6163  -1.296 3.6072  False
-     2      3  -0.8061 0.8107 -3.1488 1.5365  False
----------------------------------------------------
-
-BESS_total: ANOVA F = 6.64, p = 0.0002
-Multiple Comparison of Means - Tukey HSD, FWER=0.05 
-====================================================
-group1 group2 meandiff p-adj   lower   upper  reject
-----------------------------------------------------
-     0      1  -2.5219 0.0321 -4.8934 -0.1505   True
-     0      2   1.8243 0.0454  0.0253  3.6232   True
-     0      3   1.1801 0.9209 -3.6241  5.9842  False
-     1      2   4.3462 0.0001  1.7792  6.9133   True
-     1      3    3.702 0.2477 -1.4393  8.8434  False
-     2      3  -0.6442 0.9865 -5.5479  4.2595  False
-----------------------------------------------------
 
 HBI_total: ANOVA F = 19.69, p = 0.0000
  Multiple Comparison of Means - Tukey HSD, FWER=0.05 
@@ -216,32 +171,6 @@ group1 group2 meandiff p-adj   lower    upper  reject
      1      3  15.1566 0.0034   3.8558 26.4573   True
      2      3  -0.1181    1.0 -10.8866 10.6504  False
 -----------------------------------------------------
-
-HBI_total_parent: ANOVA F = 18.31, p = 0.0000
- Multiple Comparison of Means - Tukey HSD, FWER=0.05 
-=====================================================
-group1 group2 meandiff p-adj   lower    upper  reject
------------------------------------------------------
-     0      1   -6.702  0.002 -11.4873 -1.9168   True
-     0      2   6.2681 0.0001   2.5825  9.9536   True
-     0      3  14.4408 0.0031   3.7668 25.1149   True
-     1      2  12.9701    0.0   7.7644 18.1758   True
-     1      3  21.1429    0.0   9.8534 32.4323   True
-     2      3   8.1728 0.2125  -2.6963 19.0418  False
------------------------------------------------------
-
-hbi_attention: ANOVA F = 17.49, p = 0.0000
-Multiple Comparison of Means - Tukey HSD, FWER=0.05 
-====================================================
-group1 group2 meandiff p-adj   lower   upper  reject
-----------------------------------------------------
-     0      1   -0.547 0.0058 -0.9743 -0.1197   True
-     0      2   0.6567    0.0  0.3388  0.9746   True
-     0      3   0.3755 0.6733 -0.4851   1.236  False
-     1      2   1.2037    0.0  0.7413  1.6662   True
-     1      3   0.9225 0.0505 -0.0013  1.8463  False
-     2      3  -0.2812 0.8418 -1.1598  0.5973  False
-----------------------------------------------------
 
 
 
