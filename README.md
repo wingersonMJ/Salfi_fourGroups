@@ -139,162 +139,38 @@ group1 group2 meandiff p-adj   lower    upper  reject
      2      3  -0.1181    1.0 -10.8866 10.6504  False
 
 
-
 ---
 
+## Unadjusted Cox PH
 
-
-
-
-
-
-
-
-
-|                               |           | Missing   | Overall       | +Ex/+Sleep    | +Ex/-Sleep    | -Ex/+Sleep    | -Ex/-Sleep    | 
-|-------------------------------|-----------|-----------|---------------|---------------|---------------|---------------|---------------|
-| n                             |           |           | 335           | 46            | 9             | 184           | 96            |           
-| month, n (%)                  | April     |           | 26 (7.76)     | 5 (10.87)     | 1 (11.11)     | 13 (7.07)     | 7 (7.29)      |  
-|                               | August    |           | 25 (7.46)     | 2 (4.35)      | 0 (0.00)      | 15 (8.15)     | 8 (8.33)      |           
-|                               | December  |           | 23 (6.87)     | 3 (6.52)      | 0 (0.00)      | 14 (7.61)     | 6 (6.25)      |           
-|                               | February  |           | 21 (6.27)     | 2 (4.35)      | 1 (11.11)     | 14 (7.61)     | 4 (4.17)      |           
-|                               | January   |           | 44 (13.13)    | 8 (17.39)     | 0 (0.00)      | 19 (10.33)    | 17 (17.71)    |           
-|                               | July      |           | 20 (5.97)     | 5 (10.87)     | 0 (0.00)      | 10 (5.43)     | 5 (5.21)      |           
-|                               | June      |           | 31 (9.25)     | 3 (6.52)      | 1 (11.11)     | 18 (9.78)     | 9 (9.38)      |           
-|                               | March     |           | 25 (7.46)     | 4 (8.70)      | 0 (0.00)      | 14 (7.61)     | 7 (7.29)      |           
-|                               | May       |           | 35 (10.45)    | 7 (15.22)     | 0 (0.00)      | 21 (11.41)    | 7 (7.29)      |           
-|                               | November  |           | 16 (4.78)     | 1 (2.17)      | 1 (11.11)     | 8 (4.35)      | 6 (6.25)      |           
-|                               | October   |           | 32 (9.55)     | 2 (4.35)      | 4 (44.44)     | 17 (9.24)     | 9 (9.38)      |           
-|                               | September |           | 37 (11.04)    | 4 (8.70)      | 1 (11.11)     | 21 (11.41)    | 11 (11.46)    |           
-| summer, n (%)                 | 0         |           | 259 (77.31)   | 36 (78.26)    | 8 (88.89)     | 141 (76.63)   | 74 (77.08)    |   
-|                               | 1         |           | 76 (22.69)    | 10 (21.74)    | 1 (11.11)     | 43 (23.37)    | 22 (22.92)    |           
-| sport, n (%)                  | 1         |           | 69 (20.60)    | 10 (21.74)    | 0 (0.00)      | 40 (21.74)    | 19 (19.79)    |    
-|                               | 11        |           | 2 (0.60)      | 1 (2.17)      | 0 (0.00)      | 1 (0.54)      | 0 (0.00)      |           
-|                               | 12        |           | 10 (2.99)     | 2 (4.35)      | 1 (11.11)     | 4 (2.17)      | 3 (3.12)      |           
-|                               | 13        |           | 7 (2.09)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 6 (6.25)      |           
-|                               | 14        |           | 10 (2.99)     | 2 (4.35)      | 0 (0.00)      | 6 (3.26)      | 2 (2.08)      |           
-|                               | 17        |           | 2 (0.60)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 1 (1.04)      |           
-|                               | 18        |           | 32 (9.55)     | 3 (6.52)      | 0 (0.00)      | 19 (10.33)    | 10 (10.42)    |           
-|                               | 19        |           | 1 (0.30)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 0 (0.00)      |           
-|                               | 2         |           | 83 (24.78)    | 12 (26.09)    | 1 (11.11)     | 51 (27.72)    | 19 (19.79)    |           
-|                               | 20        |           | 14 (4.18)     | 1 (2.17)      | 0 (0.00)      | 11 (5.98)     | 2 (2.08)      |           
-|                               | 23        |           | 1 (0.30)      | 0 (0.00)      | 0 (0.00)      | 0 (0.00)      | 1 (1.04)      |           
-|                               | 24        |           | 11 (3.28)     | 2 (4.35)      | 3 (33.33)     | 3 (1.63)      | 3 (3.12)      |           
-|                               | 25        |           | 3 (0.90)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 2 (2.08)      |           
-|                               | 27        |           | 6 (1.79)      | 2 (4.35)      | 0 (0.00)      | 3 (1.63)      | 1 (1.04)      |           
-|                               | 28        |           | 18 (5.37)     | 3 (6.52)      | 1 (11.11)     | 9 (4.89)      | 5 (5.21)      |           
-|                               | 29        |           | 12 (3.58)     | 1 (2.17)      | 2 (22.22)     | 6 (3.26)      | 3 (3.12)      |           
-|                               | 3         |           | 3 (0.90)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 2 (2.08)      |           
-|                               | 30        |           | 3 (0.90)      | 0 (0.00)      | 0 (0.00)      | 2 (1.09)      | 1 (1.04)      |           
-|                               | 31        |           | 1 (0.30)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 0 (0.00)      |           
-|                               | 32        |           | 3 (0.90)      | 0 (0.00)      | 0 (0.00)      | 3 (1.63)      | 0 (0.00)      |           
-|                               | 33        |           | 3 (0.90)      | 0 (0.00)      | 0 (0.00)      | 2 (1.09)      | 1 (1.04)      |           
-|                               | 35        |           | 3 (0.90)      | 1 (2.17)      | 0 (0.00)      | 1 (0.54)      | 1 (1.04)      |           
-|                               | 4         |           | 5 (1.49)      | 0 (0.00)      | 0 (0.00)      | 2 (1.09)      | 3 (3.12)      |           
-|                               | 5         |           | 7 (2.09)      | 4 (8.70)      | 0 (0.00)      | 0 (0.00)      | 3 (3.12)      |           
-|                               | 6         |           | 8 (2.39)      | 0 (0.00)      | 0 (0.00)      | 6 (3.26)      | 2 (2.08)      |           
-|                               | 7         |           | 17 (5.07)     | 2 (4.35)      | 1 (11.11)     | 9 (4.89)      | 5 (5.21)      |           
-|                               | 8         |           | 1 (0.30)      | 0 (0.00)      | 0 (0.00)      | 0 (0.00)      | 1 (1.04)      |           
-| add_adhd, n (%)               | 0.0       |           | 300 (89.55)   | 41 (89.13)    | 7 (77.78)     | 166 (90.22)   | 86 (89.58)    |   
-|                               | 1.0       |           | 32 (9.55)     | 4 (8.70)      | 1 (11.11)     | 18 (9.78)     | 9 (9.38)      |           
-|                               | None      |           | 3 (0.90)      | 1 (2.17)      | 1 (11.11)     | 0 (0.00)      | 1 (1.04)      |           
-| ld_dyslexia, n (%)            | 0.0       |           | 311 (92.84)   | 43 (93.48)    | 8 (88.89)     | 173 (94.02)   | 87 (90.62)    |   
-|                               | 1.0       |           | 23 (6.87)     | 3 (6.52)      | 1 (11.11)     | 10 (5.43)     | 9 (9.38)      |           
-|                               | None      |           | 1 (0.30)      | 0 (0.00)      | 0 (0.00)      | 1 (0.54)      | 0 (0.00)      |           
-| exercise_since_injury, n (%)  | 0         |           | 280 (83.58)   | 0 (0.00)      | 0 (0.00)      | 184 (100.00)  | 96 (100.00)   |   
-|                               | 1         |           | 55 (16.42)    | 46 (100.00)   | 9 (100.00)    | 0 (0.00)      | 0 (0.00)      |           
-| current_sleep_problems, n (%) | 0         |           | 230 (68.66)   | 46 (100.00)   | 0 (0.00)      | 184 (100.00)  | 0 (0.00)      |   
-|                               | 1         |           | 105 (31.34)   | 0 (0.00)      | 9 (100.00)    | 0 (0.00)      | 96 (100.00)   |           
-
-
-
-1, Football | 2, Soccer | 3, Gymnastics | 4, Volleyball | 5, Softball | 6, Baseball | 7, Lacrosse | 8, Swimming | 9, Diving | 10, Rock Climbing | 11, Biking (extreme/dirt bike/motor cross) | 12, Skiing | 13, Snowboarding | 14, Cheerleading | 15, Track & Field | 16, Cross Country | 17, Ultimate Frisbee | 18, Basketball | 19, Tennis | 20, Ice Hocky | 21, Field Hockey | 22, Ski Jumping | 23, Water Polo | 24, Wrestling | 25, Martial Arts | 26, Rodeo | 27, Rugby | 28, Not playing sport/MVA/Fall from height | 29, Other | 30, Equestrian | 31, Trampoline | 32, Ripstick/scooter/skateboard | 33, Gym Class-nonspecific physical activity | 34, Ice skating | 35, Dodgeball
-
-
-
-
-
-
-
-
+|           |coef       |exp(coef)    |se(coef)    | coef lower 95%  | coef upper 95% | exp(coef) lower 95%   | exp(coef) upper 95%   | p-value |
+|-----------|-----------|-------------|------------|-----------------|----------------|-----------------------|-----------------------|---------|
+|covariate  |           |             |            |                 |                |                       |                       |         |
+|grouping_0 |-0.5882    |  0.5553     | 0.17       |    -0.92        |   -0.26        |        0.4002         |            0.7706     | 0.0004  |
+|grouping_2 |-0.7262    |  0.4837     | 0.18       |    -1.08        |   -0.37        |        0.3393         |            0.6897     | 0.0001  |
+|grouping_3 |-1.3974    |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
 
 --- 
 
+## KM Curve
 
-<lifelines.CoxPHFitter: fitted with 335 total observations, 0 right-censored observations>
-             duration col = 'time_sx'
-                event col = 'failure'
-      baseline estimation = breslow
-   number of observations = 335
-number of events observed = 335
-   partial log-likelihood = -1605.85
-         time fit was run = 2025-06-08 15:03:06 UTC
-           decimal_places = 4
 
 ---
-            coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
-covariate                                                                                                   
-grouping_0 -0.59      0.56      0.17           -0.92           -0.26                0.40                0.77
-grouping_2 -0.73      0.48      0.18           -1.08           -0.37                0.34                0.69
-grouping_3 -1.40      0.25      0.39           -2.16           -0.63                0.12                0.53
 
-            cmp to     z      p  -log2(p)
-covariate                                
-grouping_0    0.00 -3.52 <0.005     11.17
-grouping_2    0.00 -4.01 <0.005     14.03
-grouping_3    0.00 -3.59 <0.005     11.57
----
-Concordance = 0.58
-Partial AIC = 3217.69
-log-likelihood ratio test = 21.43 on 3 df
--log2(p) of ll-ratio test = 13.51
+## Adjusted Cox PH
 
-              coef  exp(coef)  se(coef)  coef lower 95%  coef upper 95%  exp(coef) lower 95%  exp(coef) upper 95%  cmp to       z       p  -log2(p)
-covariate                                                                                                                                          
-grouping_0 -0.5882     0.5553    0.1672         -0.9159         -0.2605               0.4002               0.7706     0.0 -3.5184  0.0004   11.1694
-grouping_2 -0.7262     0.4837    0.1810         -1.0809         -0.3715               0.3393               0.6897     0.0 -4.0131  0.0001   14.0267
-grouping_3 -1.3974     0.2472    0.3892         -2.1602         -0.6346               0.1153               0.5301     0.0 -3.5907  0.0003   11.5662
+|           |coef       |exp(coef)    |se(coef)    | coef lower 95%  | coef upper 95% | exp(coef) lower 95%   | exp(coef) upper 95%   | p-value |
+|-----------|-----------|-------------|------------|-----------------|----------------|-----------------------|-----------------------|---------|
+|covariate  |           |             |            |                 |                |                       |                       |         |
+|grouping_0 |-0.8041    |  0.5553     | 0.17       |    -0.92        |   -0.26        |        0.4002         |            0.7706     | 0.0004  |
+|grouping_2 |-0.9173    |  0.4837     | 0.18       |    -1.08        |   -0.37        |        0.3393         |            0.6897     | 0.0001  |
+|grouping_3 |-1.4876    |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
+|anxiety hx |-0.0118    |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
+|sleep prob hx|0.1393  |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
+|time_since_injury|-0.0762|0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
 
 
 
-
-
---- 
-
-
-<lifelines.CoxPHFitter: fitted with 334 total observations, 0 right-censored observations>
-             duration col = 'time_sx'
-                event col = 'failure'
-      baseline estimation = breslow
-   number of observations = 334
-number of events observed = 334
-   partial log-likelihood = -1576.34
-         time fit was run = 2025-06-08 15:11:10 UTC
-           decimal_places = 4
-
----
-                        coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%
-covariate                                                                                                               
-grouping_0             -0.80      0.45      0.17           -1.14           -0.47                0.32                0.63
-grouping_2             -0.92      0.40      0.19           -1.29           -0.55                0.28                0.58
-grouping_3             -1.49      0.23      0.42           -2.32           -0.66                0.10                0.52
-anxiety                -0.01      0.99      0.21           -0.42            0.40                0.66                1.49
-history_sleep_problems  0.14      1.15      0.21           -0.28            0.55                0.76                1.74
-time_since_injury      -0.08      0.93      0.01           -0.10           -0.05                0.91                0.95
-
-                        cmp to     z      p  -log2(p)
-covariate                                            
-grouping_0                0.00 -4.71 <0.005     18.62
-grouping_2                0.00 -4.83 <0.005     19.48
-grouping_3                0.00 -3.52 <0.005     11.19
-anxiety                   0.00 -0.06   0.96      0.07
-history_sleep_problems    0.00  0.66   0.51      0.97
-time_since_injury         0.00 -6.66 <0.005     35.08
----
-Concordance = 0.67
-Partial AIC = 3164.67
-log-likelihood ratio test = 68.82 on 6 df
--log2(p) of ll-ratio test = 40.35
 
                           coef  exp(coef)  se(coef)  coef lower 95%  coef upper 95%  exp(coef) lower 95%  exp(coef) upper 95%  cmp to       z       p  -log2(p)
 covariate                                                                                                                                                      
@@ -306,7 +182,20 @@ history_sleep_problems  0.1393     1.1494    0.2115         -0.2752          0.5
 time_since_injury      -0.0762     0.9266    0.0114         -0.0986         -0.0538               0.9061               0.9476     0.0 -6.6592  0.0000   35.0804
 
 
+---
+
+## Cox PH HR figure 
 
 
+---
+
+
+
+1. Update adjusted cox PH table
+2. Add figure captions for cox PH tables
+3. Interpret cox ph results
+4. Add in KM curve
+5. Interpret KM curve
+6. Add in Cox PH HR figure
 
 
