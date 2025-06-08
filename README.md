@@ -64,7 +64,13 @@ We first compared the demographic, clinical, and injury characteristics of these
 | hbi_cognitive, mean (SD)      |           | 4         | 10.67 (8.14)  | 5.84 (6.63)   | 13.22 (7.48)  | 9.85 (7.78)   | 14.21 (8.07)  |         |
 
 
+    0: '-Ex/+Sleep',
+    1: '+Ex/+Sleep',
+    2: '-Ex/-Sleep',
+    3: '+Ex/-Sleep'
 
+
+    
 
 PPCS:
   Group 0 vs 1: p = 0.0236
