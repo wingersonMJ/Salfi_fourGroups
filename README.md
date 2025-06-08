@@ -197,5 +197,5 @@ time_since_injury      -0.0762     0.9266    0.0114         -0.0986         -0.0
 4. Add in KM curve
 5. Interpret KM curve
 6. Add in Cox PH HR figure
-
+7. Clean code and add in
 
