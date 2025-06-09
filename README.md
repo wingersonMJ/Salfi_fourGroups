@@ -7,7 +7,7 @@ Transparency of source code and results for a manuscript submitted to [journal t
 
 [Add citation when accepted]
 
-**Presented at...**
+**Presented at...**  
 Wingerson MJ, Seehusen CN, Smulligan KL, Wilson JC, Howell DR. Combined effect of sleep and exercise soon after concussion on symptom duration among adolescents. 6th International Consensus Conference on Concussion in Sport. October 27 – 28, 2022. Amsterdam, Netherlands. Poster presentation.
 
 
