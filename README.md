@@ -90,6 +90,10 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 
 ## Kaplan Meier Curve
 
+**Survival curve for whole sample (not for text):** 
+<img src="figs/Survival_curve.png" alt="KM curve for whole sample" width="1000">  
+
+
 **Figure 1:** Kaplan Meier curve showing the proportion of patients still experiencing symptoms at various points post-concussion. 
 <img src="figs/Figure1.png" alt="KM curve" width="1000">  
 
