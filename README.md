@@ -65,7 +65,7 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 |                               | Yes       | 28 (8.36)     | 2 (4.35)      | 2 (22.22)     | 5 (2.72)      | 19 (19.79)    |         |  
 | HBI total, mean (SD)          |           | 19.58 (12.94) | 10.95 (10.79)x| 26.11 (11.37)a| 17.84 (11.94) | 26.23 (12.55)a| <0.0001 | 
 
-*x* = Group is different from all other groups (adjusted p<0.05)
+*x* = Group is different from all other groups (adjusted p<0.05)  
 *a, b, c...* = between-group difference is significant (adjusted p<0.05)
 
 
