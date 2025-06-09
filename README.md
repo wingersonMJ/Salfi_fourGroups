@@ -120,9 +120,3 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 <img src="figs/Figure2.png" alt="HR plot" width="1000">  
 
 ---
-
-
-
-7. Clean code and add in
-8. Add in original abstract
-
