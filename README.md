@@ -7,6 +7,10 @@ Transparency of source code and results for a manuscript submitted to [journal t
 
 [Add citation when accepted]
 
+**Presented at...**
+Wingerson MJ, Seehusen CN, Smulligan KL, Wilson JC, Howell DR. Combined effect of sleep and exercise soon after concussion on symptom duration among adolescents. 6th International Consensus Conference on Concussion in Sport. October 27 – 28, 2022. Amsterdam, Netherlands. Poster presentation.
+
+
 ---
 
 # Overview
@@ -47,7 +51,7 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 | Age, mean (SD)                |           | 14.48 (2.26)  | 14.32 (2.28)  | 14.27 (2.92)  | 14.56 (2.30)  | 14.41 (2.14)  | 0.8800  |
 | Concussion history, n (%)     | No        | 190 (56.72)   | 24 (52.17)    | 7 (77.78)     | 101 (54.89)   | 58 (60.42)    | 0.4238  |
 |                               | Yes       | 145 (43.28)   | 22 (47.83)    | 2 (22.22)     | 83 (45.11)    | 38 (39.58)    |         | 
-| Time to symptom resolution, mean (SD)|    | 21.46 (23.47) | 12.85 (10.51) | 58.33 (89.40) | 21.02 (20.49) | 22.96 (15.34) | <0.0001 |   
+| Time to symptom resolution, mean (SD)|    | 21.46 (23.47) | 12.85 (10.51) | 58.33 (89.40) | 21.02 (20.49) | 22.96 (15.34) | -       |   
 | Persisting Symptoms, n (%)    | No        | 268 (80.00)   | 44 (95.65)x   | 4 (44.44)a    | 148 (80.43)a  | 72 (75.00)    | 0.0013  |   
 |                               | Yes       | 67 (20.00)    | 2 (4.35)      | 5 (55.56)     | 36 (19.57)    | 24 (25.00)    |         |  
 | Anxiety history, n (%)        | No        | 309 (92.24)   | 45 (97.83)a   | 9 (100.00)    | 174 (94.57)b  | 81 (84.38)a,b | 0.0060  | 
@@ -84,8 +88,10 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 
 --- 
 
-## KM Curve
+## Kaplan Meier Curve
 
+**Figure 1:** Kaplan Meier curve showing the proportion of patients still experiencing symptoms at various points post-concussion. 
+<img src="figs/Figure1.png" alt="KM curve" width="1000">  
 
 ---
 
@@ -106,13 +112,13 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 
 ## Cox PH HR figure 
 
+**Figure 2:** Adjusted Cox Proportional Hazards ratios comparing groups, and including covariates for adjustment. The +Ex/+Sleep group is the reference group, therefore, all hazard ratios represent the hazard of event compared to the +Ex/+Sleep group. This group is represented visually as a single dot at the 1.0 vertical line. 
+<img src="figs/Figure2.png" alt="HR plot" width="1000">  
 
 ---
 
 
 
-4. Add in KM curve
-6. Add in Cox PH HR figure
 7. Clean code and add in
 8. Add in original abstract
 
