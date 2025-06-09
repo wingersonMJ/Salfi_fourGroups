@@ -48,7 +48,7 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 | Concussion history, n (%)     | No        | 190 (56.72)   | 24 (52.17)    | 7 (77.78)     | 101 (54.89)   | 58 (60.42)    | 0.4238  |
 |                               | Yes       | 145 (43.28)   | 22 (47.83)    | 2 (22.22)     | 83 (45.11)    | 38 (39.58)    |         | 
 | Time to symptom resolution, mean (SD)|    | 21.46 (23.47) | 12.85 (10.51) | 58.33 (89.40) | 21.02 (20.49) | 22.96 (15.34) | <0.0001 |   
-| Persisting Symptoms, n (%)    | No        | 268 (80.00)   | 44 (95.65)x   | 4 (44.44)a    | 148 (80.43)a  | 72 (75.00)    | 0.0013 |   
+| Persisting Symptoms, n (%)    | No        | 268 (80.00)   | 44 (95.65)x   | 4 (44.44)a    | 148 (80.43)a  | 72 (75.00)    | 0.0013  |   
 |                               | Yes       | 67 (20.00)    | 2 (4.35)      | 5 (55.56)     | 36 (19.57)    | 24 (25.00)    |         |  
 | Anxiety history, n (%)        | No        | 309 (92.24)   | 45 (97.83)a   | 9 (100.00)    | 174 (94.57)b  | 81 (84.38)a,b | 0.0060  | 
 |                               | Yes       | 26 (7.76)     | 1 (2.17)      | 0 (0.00)      | 10 (5.43)     | 15 (15.62)    |         | 
@@ -65,20 +65,22 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 *a, b, c...* = between-group difference is significant (adjusted p<0.05)
 
 
-**Example Interpretation:** We enrolled 335 patients in the study. The average time post-concussion was 8.64 days (sd=5.27). 
+**Example Interpretation:** We enrolled 335 patients in the study (62% female, 14.48±2.26 years old). The average time to study enrollment post-concussion was 8.64 days (sd=5.27). Group distributions were as follows: +Ex/+Sleep: 46 (14%), -Ex/-Sleep: 96 (29%), -Ex/+Sleep: 184 (55%), and +Ex/-Sleep: 9 (3%). After adjustment for multiple comparisons, we identified statistically significant differences between groups in the number of days between injury and enrollment. The -Ex/+Sleep group was enrolled sooner post-concussion than both the +Ex/+Sleep and +Ex/-Sleep groups. *@Zack: Continue on with this type of approach/formatting for all the variables in the table above.*
 
 ---
 
 
-
 ## Unadjusted Cox PH
 
-|           |coef       |exp(coef)    |se(coef)    | coef lower 95%  | coef upper 95% | exp(coef) lower 95%   | exp(coef) upper 95%   | p-value |
-|-----------|-----------|-------------|------------|-----------------|----------------|-----------------------|-----------------------|---------|
-|covariate  |           |             |            |                 |                |                       |                       |         |
-|grouping_0 |-0.5882    |  0.5553     | 0.17       |    -0.92        |   -0.26        |        0.4002         |            0.7706     | 0.0004  |
-|grouping_2 |-0.7262    |  0.4837     | 0.18       |    -1.08        |   -0.37        |        0.3393         |            0.6897     | 0.0001  |
-|grouping_3 |-1.3974    |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
+**Table 2:** Cox Proportional Hazards results comparing groups based on hazard of symptom resolution. The +Ex/+Sleep group is the reference group, therefore, all hazard ratios represent the hazard of event compared to the +Ex/+Sleep group. A hazard ratio of 1.0 indicates no difference between groups in the hazard of event. A hazard ratio <1.0 represents a lower hazard of event for the group in the table compared to the reference group. A hazard ratio of >1.0 represents an increased hazard of event compared to the reference group.
+|           |Hazard Ratio | HR lower 95%          | HR upper 95%          | p-value |
+|-----------|-------------|-----------------------|-----------------------|---------|
+|covariate  |             |                       |                       |         |
+|-Ex/+Sleep |  0.5553     |        0.4002         |            0.7706     | 0.0004  |
+|-Ex/-Sleep |  0.4837     |        0.3393         |            0.6897     | 0.0001  |
+|+Ex/-Sleep |  0.2472     |        0.1153         |            0.5301     | 0.0003  |
+
+**Example Interpretation:** Compared the the +Ex/+Sleep group, the hazard of symptom resolution was significantly lower in the -Ex/+Sleep group (HR: 0.56, 95% CI: 0.40-0.77), lower in the -Ex/-Sleep group (HR: 0.48, 95% CI: 0.34-0.69), and lower in the +Ex/-Sleep group (HR: 0.25, 95% CI: 0.12-0.53). 
 
 --- 
 
@@ -89,29 +91,17 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 
 ## Adjusted Cox PH
 
-|           |coef       |exp(coef)    |se(coef)    | coef lower 95%  | coef upper 95% | exp(coef) lower 95%   | exp(coef) upper 95%   | p-value |
-|-----------|-----------|-------------|------------|-----------------|----------------|-----------------------|-----------------------|---------|
-|covariate  |           |             |            |                 |                |                       |                       |         |
-|grouping_0 |-0.8041    |  0.5553     | 0.17       |    -0.92        |   -0.26        |        0.4002         |            0.7706     | 0.0004  |
-|grouping_2 |-0.9173    |  0.4837     | 0.18       |    -1.08        |   -0.37        |        0.3393         |            0.6897     | 0.0001  |
-|grouping_3 |-1.4876    |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
-|anxiety hx |-0.0118    |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
-|sleep prob hx|0.1393  |  0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
-|time_since_injury|-0.0762|0.2472     | 0.39       |    -2.16        |   -0.63        |        0.1153         |            0.5301     | 0.0003  |
-
-
-
-
-                          coef  exp(coef)  se(coef)  coef lower 95%  coef upper 95%  exp(coef) lower 95%  exp(coef) upper 95%  cmp to       z       p  -log2(p)
-covariate                                                                                                                                                      
-grouping_0             -0.8041     0.4475    0.1707         -1.1388         -0.4695               0.3202               0.6253     0.0 -4.7098  0.0000   18.6212
-grouping_2             -0.9173     0.3996    0.1899         -1.2896         -0.5450               0.2754               0.5798     0.0 -4.8296  0.0000   19.4797
-grouping_3             -1.4876     0.2259    0.4223         -2.3154         -0.6598               0.0987               0.5169     0.0 -3.5223  0.0004   11.1907
-anxiety                -0.0118     0.9883    0.2096         -0.4226          0.3990               0.6553               1.4903     0.0 -0.0563  0.9551    0.0663
-history_sleep_problems  0.1393     1.1494    0.2115         -0.2752          0.5537               0.7594               1.7397     0.0  0.6587  0.5101    0.9711
-time_since_injury      -0.0762     0.9266    0.0114         -0.0986         -0.0538               0.9061               0.9476     0.0 -6.6592  0.0000   35.0804
-
-
+**Table 3:** Cox Proportional Hazards results comparing groups based on hazard of symptom resolution, after adjusting for covariates. The +Ex/+Sleep group is the reference group, therefore, all hazard ratios represent the hazard of event compared to the +Ex/+Sleep group. A hazard ratio of 1.0 indicates no difference between groups in the hazard of event. A hazard ratio <1.0 represents a lower hazard of event for the group in the table compared to the reference group. A hazard ratio of >1.0 represents an increased hazard of event compared to the reference group.
+|           |Hazard Ratio | HR lower 95%          | HR upper 95%          | p-value |
+|-----------|-------------|-----------------------|-----------------------|---------|
+|covariate  |             |                       |                       |         |
+|-Ex/+Sleep |  0.4475     |        0.3202         |            0.6253     | 0.0000  |
+|-Ex/-Sleep |  0.3996     |        0.2754         |            0.5798     | 0.0000  |
+|+Ex/-Sleep |  0.2259     |        0.0987         |            0.5169     | 0.0004  |
+| Anxiety hx|  0.9883     |        0.6553         |            1.4903     | 0.9551  |
+| Hx of sleep problems| 1.1494|    0.7594         |            1.7397     | 0.5101  |
+| Time since injury| 0.9266|       0.9061         |            0.9476     | 0.0000  |
+      
 ---
 
 ## Cox PH HR figure 
@@ -121,11 +111,7 @@ time_since_injury      -0.0762     0.9266    0.0114         -0.0986         -0.0
 
 
 
-1. Update adjusted cox PH table
-2. Add figure captions for cox PH tables
-3. Interpret cox ph results
 4. Add in KM curve
-5. Interpret KM curve
 6. Add in Cox PH HR figure
 7. Clean code and add in
 8. Add in original abstract
