@@ -105,13 +105,14 @@ Data are presented as mean and standard deviation (sd), or n and percent in grou
 |           |Hazard Ratio | HR lower 95%          | HR upper 95%          | p-value |
 |-----------|-------------|-----------------------|-----------------------|---------|
 |covariate  |             |                       |                       |         |
-|-Ex/+Sleep |  0.4475     |        0.3202         |            0.6253     | 0.0000  |
-|-Ex/-Sleep |  0.3996     |        0.2754         |            0.5798     | 0.0000  |
-|+Ex/-Sleep |  0.2259     |        0.0987         |            0.5169     | 0.0004  |
-| Anxiety hx|  0.9883     |        0.6553         |            1.4903     | 0.9551  |
-| Hx of sleep problems| 1.1494|    0.7594         |            1.7397     | 0.5101  |
-| Time since injury| 0.9266|       0.9061         |            0.9476     | 0.0000  |
-      
+|-Ex/+Sleep |  0.5194     |        0.3666         |            0.7359     | 0.0002  |
+|-Ex/-Sleep |  0.5582     |        0.3762         |            0.8282     | 0.0038  |
+|+Ex/-Sleep |  0.3816     |        0.1636         |            0.8901     | 0.0258  |
+| Anxiety hx|  1.2474     |        0.8193         |            1.8991     | 0.3026  |
+| Hx of sleep problems| 1.2541|    0.8334         |            1.8872     | 0.2774  |
+| Time since injury| 0.9249|       0.9042         |            0.9460     | 0.0000  |
+| HBI score |  0.9650     |        0.9550         |            0.9751     | 0.0000  |
+
 ---
 
 ## Cox PH HR figure 
